@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Name: Kenneth Dela Cruz
+Date Created: 09/20/2019
+-->
+<html lang="en">
+	<head>
+		<title>Contact Me</title>
+	</head>
+	
+	<body>
+		<h1>Contact me</h1>
+		<hr />
+		<p><a href="index.html">Home</a></p>
+		<hr />
+		<h2><strong>Information Request</strong><h2>
+		<form action="submit.html" method ="POST">
+			<label for="FirstName">First Name:</label> <br />
+			<input id = "FirstName" type="text" name="FirstName" required/> <br />
+			<label for="LastName">Last Name:</label><br />
+			<input id = "LastName" type="text" name="LastName" required/> <br />
+			<label for="PhoneNumber">Phone Number:</label><br />
+			<input id = "PhoneNumber" type="text" name="PhoneNumber" required/> <br />
+			
+			<label for="contact">Best time to call:</label><br />
+			<select name="contact" id="contact">
+				<option value="Morning">Morning(8AM to 12PM Eastern)</option>
+				<option value="Afternoon">Afternoon(12PM to 5PM Eastern)</option>
+				<option value="Evening">Evenng(5PM to 8PM Eastern)</option>
+			</select>
+			
+			<fieldset>
+				<legend> I am interested in (check all that apply):</legend> <br />
+				<input id= "FrontEnd" type="checkbox" name="myChoices" value="FrontEnd" checked/>
+				<label for="FrontEnd">Front End Web Development</label><br />
+				<input id= "BackEnd" type="checkbox" name="myChoices" value="BackEnd"/>
+				<label for="BackEnd">Back End Web Development</label><br />
+				<input id= "Database" type="checkbox" name="myChoices" value="Database"/>
+				<label for="Database">Database Design</label><br />
+			</fieldset>
+			
+			<fieldset>
+				<legend>I have filled in the client questionnaire form:</legend> <br />
+				<input type="radio" id="choice1" name="questionnaire" value="yes" />
+				<label for="choice1">Yes</label><br />
+				<input type="radio" id="choice2" name="questionnaire" value="no"/>
+				<label for="choice2">No</label><br />				
+			</fieldset>
+			
+			<h3></h3>
+			<div style="border-color: aqua; border-style: solid; border-width: 1px;">
+
+			</div>
+			
+			<label for="info">Additional Information</label><br />
+			<textarea id="info" name="info"></textarea><br />
+			
+			<input type="submit" name="submit" value="submit"/>
+			<hr />
+		</form>
+	</body>
+</html>
