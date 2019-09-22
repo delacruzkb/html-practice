@@ -14,7 +14,87 @@
 			<a href="contact.html">Contact Us</a> </h2>
 		</center>
 		<hr />
-
+		<form action="submit.html" method="POST">
+			<table border="0" width="100%" style="table-layout: fixed">
+				<tr>
+					<td style="text-align: right">
+						<label for="Name">Name:</label>
+					</td>
+					<td>
+						<input id = "Name" type="text" name="Name" required/>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: right">
+						<label for="Email">Email:</label>
+					</td>
+					<td>
+						<input id = "Email" type="text" name="Email" required/>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: right">
+						<label for="PhoneNumber">Phone Number:</label>
+					</td>
+					<td>
+						<input id = "PhoneNumber" type="text" name="PhoneNumber" required/>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: right">
+						<label for="Reason">Reason for Inquiry:</label><br />
+					</td>
+					<td>
+						<select name="Reason" id="Reason">
+							<option value="Catering">Catering</option>
+							<option value="PrivateParty">Private Party</option>
+							<option value="FeedBack">FeedBack</option>
+							<option value="Other">Other</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: right">
+						<label for="briefDescription">Additional Information:</label>
+					</td>
+					<td>
+						<textarea id="briefDescription" name="briefDescription"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: right">
+						<label>Have you Been to the Restaurant?</label>
+					</td>
+					<td>
+						<input type="radio" id="HaveNotBeen" name="BeenToRestaurant" value="No"/>
+						<label for="HaveNotBeen">No</label>
+						<input type="radio" id="HaveBeen" name="BeenToRestaurant" value="Yes"/>
+						<label for="HaveBeen">Yes</label>
+						
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: right">
+						<label>Best days to contact you:</label>
+					</td>
+					<td>
+						<input id="Monday" type="checkbox" name="contact" value="Monday">
+						<label for="Monday"> M</label>
+						<input id="Tuesday" type="checkbox" name="contact" value="Tuesday">
+						<label for="Tuesday"> T</label>
+						<input id="Wednesday" type="checkbox" name="contact" value="Wednesday">
+						<label for="Wednesday"> W</label>
+						<input id="Thursday" type="checkbox" name="contact" value="Thursday">
+						<label for="Thursday"> Th</label>
+						<input id="Friday" type="checkbox" name="contact" value="Friday">
+						<label for="Friday"> F</label>
+					</td>
+				</tr>
+			</table>
+			<center>
+				<input type="submit" name="submit" value="submit"/>
+			</center>
+		</form>
 		<hr />
 		<footer>
 			<center>
